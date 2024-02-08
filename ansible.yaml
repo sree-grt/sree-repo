@@ -1,0 +1,8 @@
+- name: automation ansible playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: installaling nginx
+      apt:
+        name: nginx
+        state: present
